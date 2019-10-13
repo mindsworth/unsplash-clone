@@ -1,7 +1,7 @@
 .header-form {
     display: flex;
     width: $max-width;
-    border-radius: 10px;
+    border-radius: $border-radius;
     overflow: hidden;
 
     .submit-btn {

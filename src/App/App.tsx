@@ -1,5 +1,6 @@
 import React from 'react'
-import SearchInput from '../components/SearchInput/SearchInput'
+import SearchInput from '../components/SearchInput'
+import PhotoList from '../components/PhotoList'
 
 const App = () => {
 	return (
@@ -7,6 +8,7 @@ const App = () => {
 			<header className="header">
 				<SearchInput />
 			</header>
+			<PhotoList />
 		</div>
 	)
 }
