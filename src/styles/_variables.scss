@@ -26,21 +26,30 @@ $light-grey: rgb(237, 237, 237) !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$mid-grey: rgb(221, 225, 232) !default;
 
 /// Dark grey
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
+/// White
+/// @type Color
+$white: rgb(255, 255, 255) !default;
+
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
+
+/// Base font size
+/// @type size
+$default: 16px !default;
+$book: 20px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-    'small': 320px,
-    'medium': 768px,
-    'large': 1024px
+    'mobile': 320px,
+    'tablet': 768px,
+    'desktop': 1024px
 ) !default;

@@ -3,5 +3,8 @@
 // 1. Configuration and helpers
 @import './variables', '/mixins', './globals';
 
-// 2. Components stylings
-@import "../app"
+// 2. Main page stylings
+@import '../App/app';
+
+// 3. Components stylings
+@import '../components/SearchInput/searchInput';
