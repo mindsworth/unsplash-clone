@@ -16,5 +16,5 @@
 		"jsx": "react",
 		"types": ["jest", "node"]
 	},
-	"include": ["src"]
+	"include": ["src", "App/App.tsx", "App/App.test.tsx"]
 }

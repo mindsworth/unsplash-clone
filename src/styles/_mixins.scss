@@ -23,11 +23,20 @@
     }
 }
 
-/// Make a context based selector a little more friendly
-/// @author Hugo Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-    #{$context} & {
-        @content;
+/// Make a context based selector responsive friendly
+/// @param {String} $min
+/// @param {String} $media
+/// @param {String} $max
+@mixin responsify($min: map-get($breakpoints, tablet), $media: screen, $max: false) {
+    @if $max {
+        @media #{ $media } and (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    }
+
+    @else {
+        @media #{ $media } and (min-width: $min) {
+            @content;
+        }
     }
 }

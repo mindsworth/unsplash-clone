@@ -2,11 +2,21 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+@charset 'UTF-8';
+
 /**
  * Set up a decent box model on the root element
+ * and base font size ratio @62.5
  */
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $default;
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
 }
 
 /**
