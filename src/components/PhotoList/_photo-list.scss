@@ -1,4 +1,22 @@
 .photo-list-container {
-    margin-top: -5rem;
-    padding: 0 3rem;
+    @include position;
+
+    .photo-list {
+        margin-top: -6rem;
+        padding: 0 5rem;
+
+        @include responsify {
+            width: 100%;
+            max-width: $max-width;
+            padding: 0 10rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 5rem;
+            gap: 5rem;
+        }
+
+        @include responsify(map-get($breakpoints, desktop)) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }

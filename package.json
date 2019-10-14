@@ -1,6 +1,8 @@
 {
     "name": "unsplash-clone",
     "version": "0.1.0",
+    "description": "A mini unsplash clone.",
+    "author": "Gozieloper",
     "private": true,
     "dependencies": {
         "node-sass": "^4.12.0",

@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Card = () => (
-    <div className="card">
+interface CardProps {
+    classes?: string
+    imgSrc: string
+}
+
+const Card = ({ classes, imgSrc }: CardProps) => (
+    <div className={`card ${classes}`}>
         <div className="card--image-wrap">
-            <img src="./unsplash.jpg" alt="Unsplash"/>
+            <img src={imgSrc} alt="Unsplash" />
         </div>
         <div className="card--info">
             <h4>Chigoziem Nwaiwu</h4>
