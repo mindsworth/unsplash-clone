@@ -14,7 +14,10 @@ html {
 }
 
 body {
-    font-size: $default;
+    font: {
+        family: $text-font-stack;
+        size: $default;
+    }
     -webkit-font-smoothing: antialiased; /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale; /* Firefox */
 }

@@ -27,16 +27,24 @@
 /// @param {String} $min
 /// @param {String} $media
 /// @param {String} $max
-@mixin responsify($min: map-get($breakpoints, tablet), $media: screen, $max: false) {
+@mixin responsify(
+    $min: map-get($breakpoints, tablet),
+    $media: screen,
+    $max: false
+) {
     @if $max {
         @media #{ $media } and (min-width: $min) and (max-width: $max) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @media #{ $media } and (min-width: $min) {
             @content;
         }
     }
+}
+
+@mixin position($a-pos: center, $j-pos: center) {
+    display: flex;
+    align-items: $a-pos;
+    justify-content: $j-pos;
 }
