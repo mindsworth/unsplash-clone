@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/unsplash-clone/static/css/main.abd4f41f.chunk.css",
+    "main.js": "/unsplash-clone/static/js/main.dae605bc.chunk.js",
+    "main.js.map": "/unsplash-clone/static/js/main.dae605bc.chunk.js.map",
+    "runtime-main.js": "/unsplash-clone/static/js/runtime-main.15a0a076.js",
+    "runtime-main.js.map": "/unsplash-clone/static/js/runtime-main.15a0a076.js.map",
+    "static/js/2.3e9fbd75.chunk.js": "/unsplash-clone/static/js/2.3e9fbd75.chunk.js",
+    "static/js/2.3e9fbd75.chunk.js.map": "/unsplash-clone/static/js/2.3e9fbd75.chunk.js.map",
+    "index.html": "/unsplash-clone/index.html",
+    "precache-manifest.bf18d9660ae8bc13422d149b4fd795c1.js": "/unsplash-clone/precache-manifest.bf18d9660ae8bc13422d149b4fd795c1.js",
+    "service-worker.js": "/unsplash-clone/service-worker.js",
+    "static/css/main.abd4f41f.chunk.css.map": "/unsplash-clone/static/css/main.abd4f41f.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15a0a076.js",
+    "static/js/2.3e9fbd75.chunk.js",
+    "static/css/main.abd4f41f.chunk.css",
+    "static/js/main.dae605bc.chunk.js"
+  ]
+}
