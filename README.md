@@ -5,13 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This a mini Unsplash Clone Application
 
 ### 1. Landing Screen: Shows 7 - 8 latest "African" photos from the API
-<img width="100%" alt="myDiary-screenshot" src="public/landing.png">
+<img width="100%" alt="Landing" src="public/Landing.png">
 
 ### 2. Search Results Screen:
-<img width="100%" alt="myDiary-screenshot" src="public/Search_Results.png">
+<img width="100%" alt="Search_Results" src="public/Search_Results.png">
 
 ### 3. Loading Placeholders:
-<img width="100%" alt="myDiary-screenshot" src="public/Loading_Placeholders.png">
+<img width="100%" alt="Loading_Placeholders" src="public/Loading_Placeholders.png">
 
 
 ### `yarn start:dev`
