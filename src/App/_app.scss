@@ -10,4 +10,21 @@
             padding: 0 5rem;
         }
     }
+
+    .result-header {
+        @include position;
+        width: $max-width;
+        text-align: left;
+        justify-content: flex-start;
+
+        p {
+            font-size: $big;
+            font-weight: 900;
+
+            span {
+                opacity: 0.5;
+                text-transform: capitalize;
+            }
+        }
+    }
 }
