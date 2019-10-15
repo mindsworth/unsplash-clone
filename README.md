@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Unsplash Clone Application
 
-This a mini Unsplash Clone Application
+This is a mini Unsplash Clone Application
 
 ### 1. Landing Screen: Shows 7 - 8 latest "African" photos from the API
 <img width="100%" alt="Landing" src="public/Landing.png">

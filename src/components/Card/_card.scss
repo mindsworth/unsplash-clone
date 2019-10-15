@@ -24,9 +24,9 @@
                 rgba(whitesmoke, 0.8) 50%,
                 rgba(whitesmoke, 0) 100%
             ),
-            linear-gradient(white 32px, transparent 0),
-            linear-gradient(white 16px, transparent 0);
-        background-size: 30% 100%, 70% 32px, 50% 16px;
+            linear-gradient(white 24px, transparent 0),
+            linear-gradient(white 14px, transparent 0);
+        background-size: 30% 100%, 70% 24px, 50% 14px;
         background-position: -150% 0, 2rem 80%, 2rem 90%;
         background-repeat: no-repeat;
         animation: loading 2s infinite;

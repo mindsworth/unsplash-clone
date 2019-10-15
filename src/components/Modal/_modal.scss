@@ -13,6 +13,7 @@
         background-color: rgb(158, 158, 158);
         border-radius: $border-radius;
         position: relative;
+        animation: open 1s;
 
         &--image {
             & img {
@@ -58,5 +59,14 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+@keyframes open {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.0);
     }
 }
