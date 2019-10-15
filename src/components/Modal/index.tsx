@@ -4,13 +4,14 @@ interface ModalProps {
     photoDetails: {
         imgSrc: string
         imgDetails: {
-            name: string,
+            name: string
             location: string
         }
     }
+    setShowModal?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Modal = ({ photoDetails }: ModalProps) => {
+const Modal = ({ photoDetails, setShowModal }: ModalProps) => {
     return (
         <div className="modal-container">
             <div className="modal-dialogue">
@@ -23,7 +24,12 @@ const Modal = ({ photoDetails }: ModalProps) => {
                         <p>{photoDetails.imgDetails.location}</p>
                     </div>
                 </div>
-                <div className="modal-dialogue--inner--close">X</div>
+                <div
+                    className="modal-dialogue--inner--close"
+                    onClick={() => setShowModal && setShowModal(false)}
+                >
+                    X
+                </div>
             </div>
         </div>
     )
