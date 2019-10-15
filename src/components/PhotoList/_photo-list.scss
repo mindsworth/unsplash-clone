@@ -1,5 +1,6 @@
 .photo-list-container {
     @include position;
+    padding-bottom: 10rem;
 
     .photo-list {
         margin-top: -6rem;
