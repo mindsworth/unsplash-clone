@@ -9,7 +9,6 @@
         @include responsify {
             width: 100%;
             max-width: $max-width;
-            padding: 0 10rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: 5rem;
