@@ -45,11 +45,7 @@ const App = () => {
                     />
                 )}
             </header>
-            {isLoading ? (
-                <div className="loading">loading...</div>
-            ) : (
-                <PhotoList data={data} />
-            )}
+            {<PhotoList data={data} isLoading={isLoading} />}
         </div>
     )
 }
