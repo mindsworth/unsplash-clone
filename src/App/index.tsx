@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import SearchInput from '../components/SearchInput'
 import PhotoList from '../components/PhotoList'
+import Modal from '../components/Modal'
 
 const App = () => {
     const [data, setData] = useState({ photos: [] })
@@ -12,6 +13,14 @@ const App = () => {
     )
     const [isLoading, setIsLoading] = useState(false)
     const [isResultHeader, setResultHeader] = useState(false)
+    const [showModal, setShowModal] = useState(false)
+    const [photoDetails, setPhotoDetails] = useState({
+        imgSrc: '',
+        imgDetails: {
+            name: '',
+            location: ''
+        }
+    })
     useEffect(() => {
         const fetchData = async () => {
             setIsLoading(true)
@@ -30,6 +39,8 @@ const App = () => {
         </div>
     )
 
+    console.log('Hello, i am here', photoDetails)
+
     return (
         <div className="app-container">
             <header className="header">
@@ -45,7 +56,15 @@ const App = () => {
                     />
                 )}
             </header>
-            {<PhotoList data={data} isLoading={isLoading} />}
+            {
+                <PhotoList
+                    data={data}
+                    isLoading={isLoading}
+                    setShowModal={setShowModal}
+                    setPhotoDetails={setPhotoDetails}
+                />
+            }
+            {showModal && photoDetails && <Modal photoDetails={photoDetails} />}
         </div>
     )
 }
