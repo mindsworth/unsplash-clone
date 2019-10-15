@@ -1,22 +1,21 @@
 import React from 'react'
 import Card from '../Card'
 
-const PhotoList = () => (
-    <section className="photo-list-container">
-        <div className="photo-list">
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash1.pn" />
-            <Card imgSrc="./unsplash1.pn" />
-            <Card imgSrc="./unsplash1.pn" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-            <Card imgSrc="./unsplash.jp" />
-        </div>
-    </section>
+interface PhotoListProps {
+    data: any
+}
+
+const PhotoList = ({ data }: PhotoListProps) => (
+    (
+        <section className="photo-list-container">
+            <div className="photo-list">
+                {data.photos.results &&
+                    data.photos.results.map((photo: any, index: number) => (
+                        <Card key={index} imgSrc={photo.urls.regular} imgDetails={photo.user} />
+                    ))}
+            </div>
+        </section>
+    )
 )
 
 export default PhotoList
